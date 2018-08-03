@@ -1,5 +1,5 @@
 version: "v1.0"
-name: First pipeline example
+name: Using switch
 agent:
   machine:
     type: e1-standard-2
@@ -11,8 +11,8 @@ blocks:
       jobs:
       - name: List contents
         commands:
-          - checkout
           - ls -al
+          - echo $SEMAPHORE_PIPELINE_ID
 
 switch:
   - name: Working with switch
