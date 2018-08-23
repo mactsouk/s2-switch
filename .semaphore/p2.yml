@@ -1,15 +1,16 @@
-version: "v1.0"
-name: Executed by switch
+version: v1.0
+name: This is Pipeline 2
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
 
 blocks:
-  - name: Environment variable
+  - name: List VM Linux version
     task:
       jobs:
-      - name: SEMAPHORE_PIPELINE_ID 
+      - name: uname
         commands:
           - echo $SEMAPHORE_PIPELINE_ID
+          - uname -a
 

@@ -1,4 +1,4 @@
-version: "v1.0"
+version: v1.0
 name: Using switch
 agent:
   machine:
@@ -15,7 +15,7 @@ blocks:
           - echo $SEMAPHORE_PIPELINE_ID
 
 switch:
-  - name: Switch Job 1 
-    pipeline_path: switch.yml
-  - name: Switch Job 2
-    pipeline_path: secondSwitch.yml
+  - name: Pipeline 1
+    pipeline_path: p1.yml
+  - name: Pipeline 2
+    pipeline_path: p2.yml
