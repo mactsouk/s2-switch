@@ -14,8 +14,8 @@ blocks:
           - ls -al
           - echo $SEMAPHORE_PIPELINE_ID
 
-switch:
+promotions:
   - name: Pipeline 1
-    pipeline_path: p1.yml
+    pipeline_file: p1.yml
   - name: Pipeline 2
-    pipeline_path: p2.yml
+    pipeline_file: p2.yml
