@@ -19,3 +19,5 @@ promotions:
     pipeline_file: p1.yml
   - name: Pipeline 2
     pipeline_file: p2.yml
+  - name: Pipeline 3
+    pipeline_file: doesNotExist.yml
